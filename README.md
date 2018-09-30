@@ -1,4 +1,4 @@
-# Learn node.js in short time
+# Learn node.js in a short time
 ## Setup
 1. [00_installation](./00_installation.md)
 1. [01_tools](01_tools.md)

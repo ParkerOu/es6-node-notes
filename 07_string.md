@@ -30,10 +30,8 @@ let sayhi = 'Hello JS!'
 console.log(sayhi.length);
 // output: 9
 ```
+> stringObject.replace(regexp/substr, replacement)
 - [replace()](https://www.w3schools.com/jsref/jsref_replace.asp) returns a new string where the specified values are replaced
-- stringObject.replace(regexp/substr, replacement)
-- **g** means golbal stating
-- **i** means case insensitive 
 ```js
 let str = 'impossible';
 console.log(str.replace('im', "I'm "));
@@ -45,6 +43,8 @@ console.log(str.replace('Willy', 'Parker'));
 console.log(str.replace(/Willy/g, 'Parker'));
 // output: Parker love dogs. Parker also lvoe cats.
 ```
+> #### **g** means golbal stating
+> #### **i** means case insensitive 
 - toUpperCase() / toLowerCase()
 ```js
 let s = 'I love JS.';
