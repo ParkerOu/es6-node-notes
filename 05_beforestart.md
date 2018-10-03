@@ -35,3 +35,14 @@ second();
 // output: 2
 // output: 1
 ```
+## [Hoisting](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting)
+> The variable and function declarations are put into memory during the compile phase, but stay exactly where you typed them in your code.
+```js
+function catName(name) {
+  console.log("My cat's name is " + name);
+}
+
+catName("Tigger");
+// output: "My cat's name is Tigger"
+```
+Putting function declarations into memory before it executes any code segment is that it allows you to **use a function before you declare it** in your code.

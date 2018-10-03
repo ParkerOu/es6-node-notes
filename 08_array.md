@@ -1,3 +1,80 @@
+# Basic Iterate
+### 1. for-loop
+```js
+let arr = [1, 2, 3];
+
+for (let index in arr) {
+    console.log(arr[index]);
+}
+```
+### 2. forEach (array built in function)
+```js
+let arr = [1, 2, 3];
+
+arr.forEach(function(element) {
+    console.log(element);
+});
+```
+### 3. [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+> Process all element in the array, and return a new one. (Original array won't change)
+```js
+let arr = [1, 2, 3];
+
+// pass a function to map
+const afterArr = array1.map(x => x * 2);
+
+console.log(afterArr);
+// output: Array [2, 4, 6]
+```
+```js
+let gradeArr = [81, 130, 75, 77, 95, 92, 177, 99, 222];
+
+let newArr = gradeArr.map(function(grade){
+  if(grade >= 100) {
+    return 100;
+  }
+  return grade;
+});
+console.log(newArr);
+// output: [81, 100, 75, 77, 95, 92, 100, 99, 100]
+```
+### 4. [reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+> Process all element in the array, and return a single value. (Original array won't change)
+```js
+let arr = [1, 2, 3, 4];
+
+let result = arr.reduce(function(prev, element) {
+  return prev + element;
+});
+
+console.log(result);
+// output: 10
+```
+```js
+var arr = [
+    'Python',
+    'JavaScript',
+    'Java',
+    'JavaScript',
+    'JavaScript',
+    'Python',
+    'C'
+];
+
+// calculate language appear n times
+let langStatistics = arr.reduce(function(langs, langName) {
+    if (langs.hasOwnProperty(langName)) {
+        langs[langName]++;
+    } else {
+        langs[langName] = 1;
+    }
+    
+    return langs;
+}, {});
+
+console.log(langStatistics);
+// output: {Python: 2, JavaScript: 3, Java: 1, C: 1}
+```
 # Spread Operator
 > **Spread Operator** is a syntactic sugar for "expanding an array into individual values."
 ```js
