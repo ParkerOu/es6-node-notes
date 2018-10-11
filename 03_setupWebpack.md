@@ -46,7 +46,7 @@ module.exports = {
   </body>
 </html>
 ```
-#### We no longer need main.js, that's delete it!
+We no longer need main.js, that's delete it!
 ```
   webpack-demo
   ...
@@ -67,5 +67,6 @@ npm run server
 ```
 localhost:3000
 ```
-#### You'll see **Hello webpack** in page.
-#### Success!
+You'll see **Hello webpack** in page.
+
+Success!

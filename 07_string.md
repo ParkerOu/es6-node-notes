@@ -43,8 +43,8 @@ console.log(str.replace('Willy', 'Parker'));
 console.log(str.replace(/Willy/g, 'Parker'));
 // output: Parker love dogs. Parker also lvoe cats.
 ```
-> #### **g** means golbal stating
-> #### **i** means case insensitive 
+> **g** means golbal stating<br />
+> **i** means case insensitive 
 - toUpperCase() / toLowerCase()
 ```js
 let s = 'I love JS.';

@@ -74,9 +74,9 @@ console.log(arr); // ['Parker', 'is']
 arr.push('handsome!');
 console.log(arr); // ['Parker', 'is', 'handsome!']
 ```
-#### We won't get any error here.
-#### Because in JS, array and object are reference type.
-#### We didn't point this constant to something else, it still refers to the same memory location.
+We won't get any error here.
+Because in JS, array and object are reference type.
+We didn't point this constant to something else, it still refers to the same memory location.
 ```js
 const obj = {
     name: 'Teemo'
@@ -87,9 +87,10 @@ obj.skill = 'taunting';
 console.log(obj); // {name: 'Teemo', skill: 'taunting'}
 ```
 
-### If you use **object literal** to modify the contents of an object, then it's equivalent to creating a new object.
-#### That is, it will save the object to another memory location, meaning this constant value has changed.
-#### In the case below, the wrong message will appear (the array is the same)
+If you use **object literal** to modify the contents of an object, then it's equivalent to creating a new object.
+That is, it will save the object to another memory location, meaning this constant value has changed.
+
+In the case below, the wrong message will appear (the array is the same)
 ```js
 const obj = {
     name: 'Teemo'

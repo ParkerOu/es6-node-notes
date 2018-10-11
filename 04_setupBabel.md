@@ -21,7 +21,7 @@ npm install @babel/core babel-loader @babel/preset-env --save-dev
 }
 ```
 ## Setup webpack.config.js
-#### Add module
+Add module
 ```js
 module.exports = {
   ...

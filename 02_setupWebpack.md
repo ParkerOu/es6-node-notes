@@ -47,11 +47,11 @@ webpack-demo
 + |- /dist
 +   |- main.js
 ```
-#### See content in main.js, and you'll find a lot of stuff here.
+See content in main.js, and you'll find a lot of stuff here.
 - **Development mode** is optimized for speed and does nothing more than providing an un-minified bundle.
 #### Try production mode
 ```sh
 npm run build
 ```
-#### Now it's a minified bundle.
+Now it's a minified bundle.
 - **Production mode** enables all sorts of optimizations out of the box. Including minification, scope hoisting, tree-shaking and more.
