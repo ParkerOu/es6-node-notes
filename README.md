@@ -11,3 +11,4 @@
 1. [07_string](07_string.md)
 1. [08_array](08_array.md)
 1. [09_function](09_function.md)
+1. [10_debug](10_debug.md)

@@ -75,6 +75,18 @@ let langStatistics = arr.reduce(function(langs, langName) {
 console.log(langStatistics);
 // output: {Python: 2, JavaScript: 3, Java: 1, C: 1}
 ```
+### 5. [Object.values]('https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values')
+> return an array of values.
+```js
+const myShoes = {
+    brand: 'SKECHERS',
+    price: 60,
+};
+
+Object.values(myShoes);
+// output: ["SKECHERS", 60]
+```
+
 # Spread Operator
 > **Spread Operator** is a syntactic sugar for "expanding an array into individual values."
 ```js
