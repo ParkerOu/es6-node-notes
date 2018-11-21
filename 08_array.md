@@ -1,19 +1,37 @@
 # Basic Iterate
 ### 1. for-loop
+  - **for...in** iterate array key
+  - **for...of** iterate array value
 ```js
-let arr = [1, 2, 3];
+const arr = [{
+    id: 1,
+    name: 'Willy'
+}, {
+    id: 2,
+    name: 'Titan'
+}, {
+    id: 3,
+    name: 'Joy'
+}];
 
-for (let index in arr) {
-    console.log(arr[index]);
-}
+for (let index in arr) console.log(index);
+// output: 0  1  2
+for (let object of arr) console.log(object);
+// output: {id: 1, name: "Willy"}  {id: 2, name: "Titan"}  {id: 3, name: "Joy"}
+for (let index in arr) console.log(arr[index]);
+// output: {id: 1, name: "Willy"}  {id: 2, name: "Titan"}  {id: 3, name: "Joy"}
 ```
 ### 2. forEach (array built in function)
+  - use **return** to skip iteration. (You can't use **break**)
+  - When using Async/Await please use **for...of** instead
 ```js
-let arr = [1, 2, 3];
+const arr = [1, 2, 3];
 
 arr.forEach(function(element) {
-    console.log(element);
+    if (element == 2) return
+    else console.log(element);
 });
+// output: 1  3
 ```
 ### 3. [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 > Process all element in the array, and return a new one. (Original array won't change)
